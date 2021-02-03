@@ -1,0 +1,200 @@
+*{ touch-action: manipulation; }/*解决fastclick报错问题*/
+html {
+	-webkit-tap-highlight-color: transparent;
+	/* overflow-x: hidden; */
+	height: 100%;
+	/* font-size: 312.5%; */
+	font-size: 16px;
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #333;
+	font-size: .3em;
+	height:100%;
+	/* max-width: 7.5rem; */
+	margin: 0 auto;
+	background: rgba(245,245,245,1);
+	font-family: arial, Microsoft Yahei
+}
+
+img {
+	vertical-align: middle;
+	border: 0
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+em, i {
+	font-style: normal
+}
+
+img {
+	border: none
+}
+
+input, img {
+	vertical-align: middle
+}
+
+input, select, textarea {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+textarea:focus {
+	outline: 0
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+	outline: 0
+}
+
+a:active, a:hover, a.current {
+	outline: 0
+}
+
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: 1;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0;
+	text-shadow: none;
+	vertical-align: middle;
+	outline: none;
+}
+
+button, input, optgroup, select, textarea {
+	color: inherit;
+	margin: 0;
+	writing-mode: horizontal-tb;
+	-webkit-writing-mode: horizontal-tb;
+}
+select{cursor:pointer}
+button, html input[type=button], input[type=reset], input[type=submit] {
+	-webkit-appearance: button;
+	cursor: pointer
+}
+
+button{margin: 0;
+	padding: 0;
+	border: 1px solid transparent;
+	outline: none;
+}
+/*公共样式*/
+.c_pointer{cursor:pointer}
+.animated{ animation-duration: 300ms; }
+.font_0{font-size:0}
+.d_block{display:block}
+.d_iblock{display:inline-block}
+.d_flex{display:flex}
+.d_fixed{display:fixed}
+.p_relative{position:relative}
+.p_absolute{position:absolute}
+.c_red{color:red}
+.c_green{color:green}
+.c_blue{color:blue}
+.c_white{color:white}
+.t_duration_100{transition-duration: 100ms}
+.t_duration_200{transition-duration: 200ms}
+.t_duration_500{transition-duration: 500ms}
+.t_left{text-align:left}
+.t_center{text-align:center}
+.t_right{text-align: right;}
+.f_left{float: left;}
+.f_righr{float:right;}
+.v_top{vertical-align: top;}
+.v_middle{vertical-align: middle;}
+.v_bottom{vertical-align: bottom;}
+.o_hidden{overflow:hidden}
+.box_auto{position:absolute;left:0;top:0;right:0;bottom:0;margin:auto;}
+.w_100{width:100%}
+.h_100{height:100%}
+.w_50{width:50%}
+.h_50{height:50%}
+.cursor_pointer{cursor:pointer}
+.el-table.bgduck th{background-color:#FAFAFA !important}
+.o_auto{overflow: auto;}
+.ox_auto{overflow-x: auto;}
+.oy_auto{overflow-y: auto;}
+.border_box{box-sizing: border-box;}
+.f_left{float:left}
+.f_right{float: right;}
+.c_both:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+/* .scrollbar_0::-webkit-scrollbar{width: 0 !important;height:0 !important} */
+/* .scrollbar_20:hover::-webkit-scrollbar{width:20px !important;height: 20px !important;} */
+/* .card_bglight_grey>div:nth-child(1){} */
+.customize{margin-bottom:7px}
+.customize>div.el-card__header{background-color:rgba(240,240,240,.6);padding:0px 7px;height:32px;line-height: 32px;}
+.customize>div.el-card__body{padding:4px 7px}
+.Wspace_nowrap div.cell{white-space: nowrap;}
+.btn.active:focus,.btn:focus{outline: none;}
+.w_nowrap{white-space: nowrap;};
+
+.creatdl .complex{width:100%}
+.complex input{padding-left:7px}
+.complex .el-input__inner,.complex.el-input__inner{border-top-left-radius:0px;border-bottom-left-radius:0px;}
+@keyframes rotate {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+
+}
+@-webkit-keyframes rotate {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+
+}
+
+/* @media screen and (min-width:410px) {
+	html {
+		font-size: 400%;
+	}
+
+}
+
+@media screen and (min-width:480px) {
+	html {
+		font-size: 469%;
+	}
+
+}
+
+@media screen and (min-width:640px) {
+	html {
+		font-size: 625%;
+	}
+
+} */
+
+article.wrap-main {
+    margin-left: 200px;
+	/* padding: 30px; */
+}
+
+.selfNotify.d_iblock{min-width:300px;max-width:500px;width:auto;}
+.selfNotify.d_iblock div>h2+div{margin-top:2px}
+.selfNotify.d_iblock p{font-size:12px}
